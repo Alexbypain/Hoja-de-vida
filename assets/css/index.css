@@ -1,0 +1,608 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap");
+
+:root {
+  --fondo-izuierda: #004d40;
+  --titulo-izquierda: #26a69a;
+  --texto-izquierda: #ffffff;
+  --fondo-derecha: #ecdeb8;
+  --titulo-derecha: #5d4037;
+  --texto-derecha: #3e2723;
+  --accent-color: #ffca28;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  font-family: "Roboto", sans-serif;
+}
+
+.principal {
+  display: grid;
+  grid-template-columns: 45% 55%;
+  position: relative;
+  height: auto;
+  width: 100%;
+}
+
+.izquierda {
+  background-color: var(--fondo-izuierda);
+  color: var(--texto-izquierda);
+}
+
+.datos {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  row-gap: 25%;
+  margin-top: 15%;
+  padding-left: 8%;
+}
+
+.datos p {
+  margin: 0px;
+  padding: 0px;
+}
+
+.foto-circular {
+  position: absolute;
+  left: 45%;
+  transform: translateX(-50%);
+  top: 4%;
+  z-index: 2;
+  border-radius: 50%;
+  width: 12rem;
+  height: 12rem;
+  border: 5px solid var(--fondo-derecha);
+}
+
+.education {
+  padding-top: 10%;
+  padding-left: 8%;
+}
+
+.educacion h1 {
+  font-size: 1rem;
+}
+
+.education-container {
+  max-width: 800px;
+  margin-top: 7%;
+}
+
+.education-item {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 10px;
+  margin-bottom: 30px;
+  align-items: start;
+}
+
+.education-left {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.education-right {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-top: 0;
+}
+
+.year,
+.location {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.course-name {
+  font-size: 1.1rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.institution {
+  font-style: italic;
+  opacity: 0.8;
+  margin-top: 0;
+}
+
+.idiomas-container {
+  padding-left: 8%;
+  color: white;
+  width: 100%;
+  max-width: 500px;
+}
+
+.idiomas h2 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 1.5rem;
+}
+
+.idioma-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.idioma-nombre {
+  width: 100px;
+  color: white;
+  font-size: 1rem;
+}
+
+.barra-progreso {
+  flex-grow: 1;
+  max-width: 200px;
+  height: 10px;
+  background-color: #1e3a6e;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.progreso {
+  height: 100%;
+  background-color: #a8c6e5;
+  border-radius: 4px;
+}
+
+.nivel-100 {
+  width: 100%;
+}
+
+.nivel-80 {
+  width: 80%;
+}
+
+.nivel-50 {
+  width: 50%;
+}
+
+.redes {
+  padding-left: 8%;
+  padding-top: 5%;
+}
+
+.redes-item {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  margin-top: 5%;
+}
+
+.derecha {
+  background-color: var(--fondo-derecha);
+  color: var(--texto-derecha);
+  text-align: right;
+  height: max-content;
+}
+
+.perfil {
+  margin-top: 10%;
+  margin-left: 0%;
+  height: 100%;
+}
+
+.perfil h1 {
+  font-size: 2rem;
+  margin: 0px;
+  color: var(--texto-derecha);
+  padding-top: 10px;
+}
+
+.nombre {
+  position: relative;
+  font-size: 26px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  width: 100%;
+  height: 50%;
+  margin-left: 36.5%;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+}
+
+.background-nombre {
+  position: absolute;
+  background-color: #089c837c;
+  width: calc(60% + 10px);
+  height: calc(100% + 20px);
+  top: -10px;
+  left: 20px;
+  z-index: 1;
+}
+
+.foreground-nombre {
+  position: relative;
+  background-color: #089c84;
+  padding: 10px;
+  width: 60%;
+  height: 60%;
+  z-index: 2;
+  text-align: right;
+  align-items: center;
+}
+
+.foreground-container h1 {
+  color: white;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  font-weight: normal;
+}
+
+.mi_perfil {
+  margin: 12% 5% 0 5%;
+  padding: 0px;
+  text-align: justify;
+}
+
+.mi_perfil h2 {
+  padding-left: 5%;
+}
+
+.experiencia-profesional {
+  max-width: 800px;
+  margin-left: 0;
+}
+
+.experiencia-profesional h2 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: var(--texto-derecha);
+  text-align: left;
+  padding-left:4%;
+}
+
+.experiencia-item {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  margin-bottom: 2.5rem;
+  align-items: start;
+  text-align: left;
+  margin-left: 4%;
+}
+
+.experiencia-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.experiencia-right {
+  padding-left: 0%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.fecha_inicio,
+.fecha_final {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  white-space: nowrap;
+}
+
+.location {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  margin-top: 4px;
+}
+
+.compañia {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.cargo {
+  font-size: 1rem;
+  margin: 4px 0 8px 0;
+}
+
+.tareas-titulo {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.tareas-lista {
+  list-style-type: disc;
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.tareas-lista li {
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+  line-height: 1.4;
+}
+
+.habilidades {
+  margin-left: 4%;
+  text-align: left;
+  margin-bottom: 4%;
+}
+
+.habilidades-lista {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.habilidades-lista li {
+  display: inline;
+}
+
+.habilidades-lista li:not(:first-child)::before {
+  content: " • ";
+  margin: 0 5px;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    position: relative;
+    background-color: var(--fondo-derecha);
+  }
+
+  .foto-circular {
+    position: relative;
+    left: 15%;
+    bottom:0%;
+    transform: translateX(-50%);
+    margin: 20px auto;
+    width: 14rem;
+    height: 14rem;
+    z-index: 10;
+    border: 5px solid var(--fondo-derecha);
+    
+  }
+
+  .principal {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .principal {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .derecha {
+    order: 1;
+    margin-top:0%;
+  }
+
+  .izquierda {
+    order: 2;
+  }
+
+  .education-item,
+  .experiencia-item {
+    grid-template-columns: 120px 1fr;
+  }
+
+  .nombre {
+    margin-left: 20%;
+  }
+
+  .mi_perfil {
+    margin-top: 5%;
+  }
+
+  .datos {
+    margin-top: 5%;
+  }
+
+  .perfil h1 {
+    font-size: 1.8rem;
+    padding-right:20%;
+  }
+
+  .foreground-nombre h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    position: relative;
+    background-color: var(--fondo-izuierda);
+  }
+
+  .foto-circular {
+    position: relative;
+    left: 25%;
+    transform: translateX(-50%);
+    margin: 20px auto;
+    width: 10rem;
+    height: 10rem;
+    z-index: 10;
+    border: 5px solid white;
+  }
+
+  .principal {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .izquierda,
+  .derecha {
+    background-color: var(--fondo-izuierda);
+    color: var(--texto-izquierda);
+    width: 100%;
+  }
+
+  .derecha {
+    order: 1;
+  }
+
+  .izquierda {
+    order: 2;
+  }
+
+  .perfil {
+    width: 100%;
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .datos {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .mi_perfil {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 0%;
+  }
+
+  .mi_perfil p {
+    text-align: justify;
+  }
+
+  .habilidades {
+    width: 100%;
+  }
+
+  .education {
+    width: 100%;
+    padding-top: 20px;
+  }
+
+  .idiomas-container {
+    width: 100%;
+  }
+
+  .redes {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+
+  .education-item,
+  .experiencia-item {
+    grid-template-columns: 1fr;
+    gap: 5px;
+    padding-right:0%;
+  }
+  .tareas-lista{
+    
+    text-align:justify;
+  }
+
+  .redes-item {
+    grid-template-columns: 70px 1fr;
+    gap: 0%;
+  }
+
+  .nombre {
+    margin-left: 10%;
+    font-size: 20px;
+  }
+
+  .foreground-nombre {
+    width: 80%;
+  }
+
+  .background-nombre {
+    width: calc(80% + 10px);
+  }
+
+  .datos {
+    grid-template-columns: 30px 1fr;
+    row-gap: 15%;
+    padding-left: 10%;
+  }
+
+  .mi_perfil,
+  .habilidades {
+    padding: 0 8%;
+    text-align: left;
+  }
+
+  .mi_perfil h2,
+  .habilidades h2 {
+    text-align: left;
+    padding-left: 0;
+    color: var(--texto-izquierda);
+  }
+
+  .mi_perfil p {
+    color: var(--texto-izquierda);
+  }
+
+  .habilidades-lista {
+    flex-direction: column;
+  }
+
+  .habilidades-lista li {
+    margin-bottom: 8px;
+    padding-left: 10px;
+    position: relative;
+    color: var(--texto-izquierda);
+  }
+
+  .habilidades-lista li:not(:first-child)::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    margin: 0;
+  }
+
+  .experiencia-profesional {
+    padding: 0 8%;
+  }
+  .experiencia-profesional h2{
+    color: var(--texto-izquierda);
+    margin-left:0%;
+  }
+
+
+  .experiencia-item {
+    margin-left: 0;
+  }
+
+  .experiencia-left {
+    margin-bottom: 10px;
+  }
+
+  .education {
+    padding-left: 10%;
+  }
+
+  .perfil {
+    text-align: center;
+  }
+
+  .perfil h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--texto-izquierda);
+  }
+
+  .nombre {
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  .foreground-nombre {
+    text-align: center;
+  }
+
+  .foreground-nombre h1 {
+    font-size: 1.5rem;
+  }
+
+  .compañia,
+  .cargo,
+  .tareas-titulo,
+  .tareas-lista li {
+    color: var(--texto-izquierda);
+  }
+}
+
